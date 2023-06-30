@@ -1,0 +1,31 @@
+<form class="example-form" [formGroup]="usuarioForm" (ngSubmit)="salvarUsuario()">
+    <mat-card>
+    <mat-card-content>
+
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="ID" formControlName="id" >
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Nome" formControlName="nome" >
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" formControlName="email" >
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Data nascimento</mat-label>
+        <input matInput placeholder="99/99/9999" formControlName="dataNascimento" >
+      </mat-form-field>
+
+</mat-card-content>
+    <mat-card-footer>
+    <div class="example-button-row" style="margin: 2px">
+        <button mat-raised-button color="primary">Salvar</button> | <a (click)="closepopup()" mat-raised-button color="accent">Fechar</a>
+    </div>
+</mat-card-footer>
+</mat-card>
+  </form>
